@@ -25,8 +25,8 @@ public class TarefaService {
     }
 
     private final List<TarefaDTO> tareffoiss = Arrays.asList(
-           new TarefaDTO(1L, "fazerCoisa", "comoFazerCoisa", "pessoaQueFaz", "Média", "23/09/2024"),
-            new TarefaDTO(2L, "fazerOutraCoisa", "comoFaz?", "outraPessoa", "Alta", "25/09/2024")
+           new TarefaDTO(1L, "fazerCoisa", "comoFazerCoisa", "pessoaQueFaz", "Média", "09/23/2024", false),
+            new TarefaDTO(2L, "fazerOutraCoisa", "comoFaz?", "outraPessoa", "Alta", "09/09/2024", false)
     );
 
     public List<TarefaDTO> allTareffoiss(){
