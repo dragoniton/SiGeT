@@ -11,8 +11,7 @@ A aplicação utiliza Java 17.0.7, Springboot 3.3.4 e Maven 3.13.0 e utiliza pos
 
 Dos itens extras:
 
-e) Persistência JPA automática do springboot com bando de dados PostgreSQL com configurações especificadas em "SiGeT/src/main/resources
-/application.properties", tendo o nome da database "backenddb", com usuário "postgres" e senha "test". Foi utilizado Docker para inicializar a database com postgres versão 16, com o seguinte comando:
+e) Persistência JPA automática do springboot com bando de dados PostgreSQL com configurações especificadas em "SiGeT/src/main/resources/application.properties", tendo o nome da database "backenddb", com usuário "postgres" e senha "test". Foi utilizado Docker para inicializar a database com postgres versão 16, com o seguinte comando:
 
 `docker run -d -e POSTGRES_HOST_AUTH_METHOD=trust -e POSTGRES_USER=postgres -e POSTGRES_PASSWORD=test -e POSTGRES_DB=backenddb -p 5432:5432 postgres:16`
 
