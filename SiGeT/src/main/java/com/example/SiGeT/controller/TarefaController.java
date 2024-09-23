@@ -22,16 +22,6 @@ public class TarefaController {
     }
 
 
-    @GetMapping("/tareffoiss")
-    public ResponseEntity<List<TarefaDTO>> allTarefoiss(){
-        return ResponseEntity.ok(tarefaService.allTareffoiss());
-    }
-    @GetMapping("/tareffoiss/{id}")
-    public ResponseEntity<TarefaDTO> getTareffoi(@PathVariable Long id) {
-        return ResponseEntity.ok(tarefaService.getTarefa(id));
-    }
-
-
     @GetMapping("/tarefas/{id}")
     public ResponseEntity<TarefaDTO> getTarefa(@PathVariable Long id) {
         return ResponseEntity.ok(tarefaService.getTarefa(id));

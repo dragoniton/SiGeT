@@ -24,15 +24,6 @@ public class TarefaService {
         return tarefaMapper.toTarefaDtos(all);
     }
 
-    private final List<TarefaDTO> tareffoiss = Arrays.asList(
-           new TarefaDTO(1L, "fazerCoisa", "comoFazerCoisa", "pessoaQueFaz", "Média", "23/09/2024"),
-            new TarefaDTO(2L, "fazerOutraCoisa", "comoFaz?", "outraPessoa", "Alta", "25/09/2024")
-    );
-
-    public List<TarefaDTO> allTareffoiss(){
-        return tareffoiss;
-    }
-
     public TarefaDTO getTarefa(Long id){
         TarefaEntity tarefaEntity = tarefaRepository.findById(id)
                 .orElseThrow(() -> new AppException("Tarefa não encontrada", HttpStatus.NOT_FOUND));

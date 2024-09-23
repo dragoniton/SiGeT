@@ -3,6 +3,8 @@ package com.example.SiGeT.entity;
 import jakarta.persistence.*;
 import lombok.*;
 
+import java.util.Date;
+
 @Entity
 @Table
 @AllArgsConstructor
@@ -31,4 +33,7 @@ public class TarefaEntity {
 
     @Column
     private String deadline;
+
+    @Column
+    private Boolean done;
 }
